@@ -62,7 +62,7 @@ function daysSinceStart(now = new Date()) {
   const startUtc = Date.UTC(START_DATE.year, START_DATE.month - 1, START_DATE.day);
   const currentUtc = Date.UTC(current.year, current.month - 1, current.day);
   const diffMs = currentUtc - startUtc;
-  return Math.floor(diffMs / 86400000);
+  return Math.floor(diffMs / 86400000) + 1;
 }
 
 function statusText() {
