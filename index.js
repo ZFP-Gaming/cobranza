@@ -67,7 +67,7 @@ function daysSinceStart(now = new Date()) {
 
 function statusText() {
   const days = daysSinceStart();
-  return `${days} dias sin pagar`;
+  return `Vitoco: ${days} días sin pagar`;
 }
 
 function updatePresence() {
